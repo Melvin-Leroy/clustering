@@ -56,9 +56,23 @@ gdf.plot(ax=ax, color='red')
 plt.show()
 
 
+states = geopandas.read_file('usa-states-census-2014.shp')
+type(states)
+states.plot()
 
 
+#states.plot(cmap='magma', figsize=(12, 12))
+#states[states['NAME'] == 'Texas']
+#states[states['NAME'] == 'Texas'].plot(figsize=(12, 12))
 
+
+#sans boundaries pour les states
+#ax=states.plot()
+
+#avec boundaries pour les states
+ax=states.boundary.plot()
+gdf.plot(ax=ax, color='red')
+plt.show()
 
 
 
