@@ -21,7 +21,7 @@ from descartes import PolygonPatch
 
 # from reduction import reduce_unique_val
 
-df = pd.read_csv("chipotle_stores.csv")
+df = pd.read_csv("Data/chipotle_stores.csv")
 
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
@@ -55,7 +55,7 @@ ax = world[world.continent == 'North America'].plot(figsize=(10,10), color='whit
 gdf.plot(ax=ax, color='red')
 plt.show()
 
-
+'''
 states = geopandas.read_file('usa-states-census-2014.shp')
 type(states)
 states.plot()
@@ -72,7 +72,7 @@ states.plot()
 #avec boundaries pour les states
 ax=states.boundary.plot()
 gdf.plot(ax=ax, color='red')
-plt.show()
+plt.show()'''
 
 
 
