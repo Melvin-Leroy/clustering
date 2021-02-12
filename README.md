@@ -9,14 +9,17 @@ To do this, we use a dataset containing the positions of chipotle restaurants in
 
 ## How to Determine the Optimal numbers of clusters
 We use the elbow method and the silhouette method  
-![Elbow](image/elbow.png)
+![Elbow](images/elbow.png)
 
-![Silhouette](image/silhouette.png)  
+![Silhouette](images/silhouette.png)  
 
 With these 2 graphs we decided that the optimal number of clusters was 37.
 
 ## The map
-![Map](image/map.png)  
+![Map](images/map.png)  
+
+## The dendogram  
+![Dendogram](images/dendop10.png)   
 
 ## How to choose the best place to live
 To choose the place with the most restaurants, we drew a circle around the centroids and looked for the one with the most restaurants.
