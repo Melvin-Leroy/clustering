@@ -11,12 +11,12 @@ from sklearn.cluster import DBSCAN
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.metrics import silhouette_score
 
-states = geopandas.read_file("Data/cb_2018_us_state_20m/cb_2018_us_state_20m.shp")
+states = geopandas.read_file("data/cb_2018_us_state_20m/cb_2018_us_state_20m.shp")
 states = states[states["NAME"] != "Alaska"]
 states = states[states["NAME"] != "Hawaii"]
 states = states[states["NAME"] != "Puerto Rico"]
 
-chipotle = pd.read_csv("Data/chipotle_stores.csv")
+chipotle = pd.read_csv("data/chipotle_stores.csv")
 chipotle.head(10)
 
 
@@ -129,11 +129,11 @@ def k_means_cluster_silhouette(kmax: int, X: pd.DataFrame) -> None:
     plt.ylabel("Silhouette score")
     plt.show()
 
-#k_means_cluster(30, X)
+k_means_cluster(37, X)
 
 #DBSCAN_cluster(1.5,X)
 
-k_means_cluster_silhouette(60,X)
+# k_means_cluster_silhouette(60,X)
 
 
 #Agglomerative_cluster(35, X)
